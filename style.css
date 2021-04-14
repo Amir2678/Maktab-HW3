@@ -1,0 +1,252 @@
+@font-face {
+  font-family: "WorkSans";
+  src: url("./font/WorkSans-VariableFont_wght.ttf") format("truetype");
+}
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  font-family: "WorkSans";
+}
+
+.all {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Left section */
+
+.left-section {
+  background-color: rgb(68, 199, 229);
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.animation {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+  color: white;
+  position: relative;
+}
+.animation > div {
+  width: 110px;
+  height: 110px;
+  background-color: rgba(244, 245, 250, 0.6);
+  border-radius: 50%;
+  position: absolute;
+  top: auto;
+  /* z-index: 0; */
+  animation: inflate 3s linear infinite;
+}
+.layer2 {
+  width: 115px;
+  height: 115px;
+  /* background-color: rgba(228, 216, 216, 0.39); */
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  /* z-index: 1; */
+}
+@keyframes inflate {
+    
+  0% {
+    box-shadow: 0 0 0 10px rgba(188, 237, 243, 0.3),
+      0 0 0 20px rgba(188, 237, 243, 0.3), 0 0 0 30px rgba(188, 237, 243, 0.3),
+      0 0 0 40px rgba(188, 237, 243, 0.3), 0 0 0 50px rgba(188, 237, 243, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 0 30px rgba(188, 237, 243, 0.3),
+      0 0 0 40px rgba(188, 237, 243, 0.3), 0 0 0 50px rgba(188, 237, 243, 0.3),
+      0 0 0 60px rgba(188, 237, 243, 0.3), 0 0 0 70px rgba(188, 237, 243, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 50px rgba(188, 237, 243, 0.3),
+      0 0 0 60px rgba(188, 237, 243, 0.3), 0 0 0 70px rgba(188, 237, 243, 0.3),
+      0 0 0 80px rgba(188, 237, 243, 0.3), 0 0 0 90px rgba(188, 237, 243, 0.3);
+  }
+}
+
+.Antivirus{
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Right section */
+
+.right-section {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  height: 90%;
+  margin: 10% 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+}
+
+.enter {
+  color: rgb(35, 35, 209);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.login-heading {
+  margin-top: 15%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+}
+.login-heading > * {
+  margin: 8px 0;
+}
+.login-heading > :first-child {
+  font-size: 28px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  width: 100%;
+  margin-top: 20px;
+}
+.login-form > div {
+  margin: 15px 0;
+}
+
+.email-area {
+  width: 100%;
+  height: 30px;
+  border-bottom: solid rgba(182, 177, 177, 0.712) 2px;
+  margin: 5px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: right;
+}
+.email-area > input {
+  border: none;
+  outline: none;
+  width: calc(100% - 10px);
+  text-align: right;
+  color: gray;
+}
+.email-area > i {
+  width: 10px;
+  margin: auto 10px;
+  color: gray;
+}
+
+.password-area {
+  width: 100%;
+  height: 30px;
+  border-bottom: solid rgba(182, 177, 177, 0.712) 2px;
+  margin: 5px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: right;
+}
+.password-area > input {
+  border: none;
+  outline: none;
+  width: calc(100% - 10px);
+  text-align: right;
+  color: gray;
+}
+.password-area > i {
+  width: 10px;
+  margin: auto 10px;
+  color: gray;
+}
+
+.security {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+}
+.security > input {
+  width: 70%;
+  text-align: right;
+  border: none;
+  outline: none;
+  border-bottom: solid rgba(182, 177, 177, 0.712) 2px;
+}
+
+.security-code-area {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 28px;
+}
+.security-code-area > * {
+  margin: auto 5px;
+}
+.security-code-area > i {
+  font-size: 15px;
+}
+.security-code-area > i {
+  cursor: pointer;
+  color: gray;
+}
+.security-code {
+  background-color: rgba(221, 214, 214, 0.767);
+  text-decoration: line-through gray;
+  font-style: italic;
+  width: 50px;
+  font-size: 20px;
+  transform: rotate(-5deg);
+}
+
+.login-button {
+  background-color: rgb(1, 145, 232);
+  border: none;
+  outline: none;
+  height: 32px;
+  margin-top: 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: white;
+  font-size: 20px;
+  transition: linear 1s;
+}
+
+.remember-me {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-top: 12px;
+}
+.remember-me > div {
+  text-decoration: none;
+  color: rgb(63, 62, 62);
+  cursor: pointer;
+}
