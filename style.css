@@ -43,7 +43,6 @@ body {
   align-items: center;
   font-size: 100px;
   color: white;
-  position: relative;
 }
 .animation > div {
   width: 110px;
@@ -52,18 +51,24 @@ body {
   border-radius: 50%;
   position: absolute;
   top: auto;
-  /* z-index: 0; */
   animation: inflate 3s linear infinite;
+}
+
+.bottom-text{
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  bottom: 5px;
 }
 .layer2 {
   width: 115px;
   height: 115px;
-  /* background-color: rgba(228, 216, 216, 0.39); */
   border-radius: 50%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  /* z-index: 1; */
 }
 @keyframes inflate {
     
